@@ -1,0 +1,9 @@
+Hostname: dpg-cemiidda4991ihlnbisg-a.singapore-postgres.render.com
+
+Port: 5432
+
+Database: postgres_w31t
+
+Username: refactor_postgres
+
+Password: kyRs3orbEV6ozM3XlhB6nmTjwKbWRryZ

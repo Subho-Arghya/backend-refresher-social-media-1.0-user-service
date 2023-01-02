@@ -1,13 +1,19 @@
 /* eslint-disable prettier/prettier */
-import { Controller, Get } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { UserService } from './user.service';
 
-@Controller()
-export class AppController {
+@Controller('user')
+export class UserController {
   constructor(private readonly userService: UserService) {}
 
-  @Get()
-  getHello(): string {
-    return this.userService.getHello();
+  @Post()
+  async createUser(@Body()user) {
+    try {
+      console.log("In create user method " , user)
+    }
+    catch(err) {
+      console.log(err)
+      return err
+    }
   }
 }
